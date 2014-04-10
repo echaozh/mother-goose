@@ -32,7 +32,6 @@ func main() {
 	log.Println("told to reload")
 	wither = true
 	finish <- true
-	close(finish)
 	<-done
 	log.Println("we'll die gracefully now")
 }
